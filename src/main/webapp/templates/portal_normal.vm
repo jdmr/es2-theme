@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+
+	$theme.include($top_head_include)
+</head>
+
+<body class="$css_class">
+
+#if($is_signed_in)
+	#dockbar()
+#end
+
+<div id="wrapper">
+	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
+
+	<header id="banner" role="banner">
+                <div style="float:left;width:400px;">
+		<hgroup id="heading">
+			<h1 class="company-title">
+				<a class="logo" href="$company_url" title="#language("go-to") $company_name">
+					<span>$company_name</span>
+				</a>
+			</h1>
+
+			<h2 class="community-title">
+				<a href="$community_default_url" title="#language("go-to") $community_name">
+					<span>$community_name</span>
+				</a>
+			</h2>
+
+			<h3 class="page-title">
+				<span>$the_title</span>
+			</h3>
+		</hgroup>
+                </div>
+                <div style="float:left;width:260px;padding-top:30px;text-align:right;">
+                    <img src="/es-theme/images/lema.png" />
+                </div>
+                <div style="float:right;width:184px;text-align:right;padding: 75px 20px 0 0;">
+                    <!-- AddThis Button BEGIN -->
+                    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                        <a class="addthis_button_preferred_1"></a>
+                        <a class="addthis_button_preferred_2"></a>
+                        <a class="addthis_button_preferred_3"></a>
+                        <a class="addthis_button_preferred_4"></a>
+                        <a class="addthis_button_compact"></a>
+                    </div>
+                    <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+                    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d8a78014d97ad87"></script>
+                    <!-- AddThis Button END -->
+
+                </div>
+
+		#if(!$is_signed_in)
+			<a href="$sign_in_url" id="sign-in" rel="nofollow" style="right:20px;top:40px;">$sign_in_text</a>
+		#end
+
+		#if ($update_available_url)
+			<div class="popup-alert-notice">
+				<a class="update-available" href="$update_available_url">#language("updates-are-available-for-liferay")</a>
+			</div>
+		#end
+
+		#if ($has_navigation)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+	</header>
+
+	<div id="content">
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+
+	<footer id="footer" role="contentinfo">
+		<p class="powered-by">
+			#language("powered-by") <a href="http://www.um.edu.mx" rel="external">Universidad de Montemorelos</a>
+		</p>
+	</footer>
+</div>
+
+</body>
+
+$theme.include($bottom_include)
+
+</html>
