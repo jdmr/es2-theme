@@ -480,7 +480,7 @@ body #banner .logo a {
 }
 
 .home-bottom .inner-box .liga a {
-    background:#FDFDFD;
+    background:#F1EBE6;
     padding: 5px 5px;
     letter-spacing:1px;
     text-decoration:none;
@@ -494,7 +494,7 @@ body #banner .logo a {
 #versiculo {
     font-size: 2em; 
     letter-spacing: 4px;
-    color:#FDFDFD;
+    color:#F1EBE6;
     text-align: justify;
     padding: 10px;
 }
@@ -540,7 +540,7 @@ a.navegacion {
 }
 
 a.navegacion:hover {
-    color: #FDFDFD;
+    color: #F1EBE6;
 }
 
 
@@ -561,7 +561,7 @@ h1.tituloLeccion {
     background: #A69F9A;
     border-radius: 20px;
     padding: 5px 10px;
-    color: #FDFDFD;
+    color: #F1EBE6;
     font-size: 1.3em;
     letter-spacing: 1px;
     margin: 0 10px;
@@ -577,7 +577,7 @@ h1.tituloLeccion {
 }
 
 .caja a:hover {
-    color: #FDFDFD;
+    color: #F1EBE6;
     text-decoration: underline;
 }
 
@@ -590,7 +590,7 @@ h1.tituloLeccion {
 }
 
 a.importante {
-    background: #FDFDFD;
+    background: #F1EBE6;
     padding: 5px 10px;
     letter-spacing:1px;
     text-decoration:none;
@@ -604,4 +604,44 @@ a.importante:hover {
 
 .addthis_toolbox {
     letter-spacing: 0;
+}
+
+.resumenArticulo a.titulo {
+    color:#4C4238;
+    letter-spacing:1px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.resumenArticulo a.titulo:hover {
+    text-decoration: underline;
+}
+
+.resumenArticulo p.titulo {
+    text-align: left;
+}
+
+.resumenArticulo p {
+    letter-spacing:1px;
+    color:#F1EBE6;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.resumenArticulo .liga {
+    margin: 10px 0;
+    padding: 0px;
+    text-align: right;
+}
+
+.resumenArticulo .liga a {
+    background:#F1EBE6;
+    padding: 5px 5px;
+    letter-spacing:1px;
+    text-decoration:none;
+    color:#4C4238;
+}
+
+.resumenArticulo .liga a:hover {
+    text-decoration: underline;
 }
