@@ -420,7 +420,7 @@ body #banner .logo a {
     height:400px;
     background:#CDB49D;
     border-radius:0 20px 0 20px;
-    
+
 }
 
 #home-bottom-left {
@@ -492,13 +492,116 @@ body #banner .logo a {
 }
 
 #versiculo {
-    font-size: 1.5em; 
+    font-size: 2em; 
     letter-spacing: 4px;
     color:#FDFDFD;
+    text-align: justify;
+    padding: 10px;
 }
 
 h1.importante {
     color: #535353;
     letter-spacing: 4px;
     font-size: 3em;
+}
+
+.anterior {
+    float:left;
+    font-size: 1.2em; 
+    letter-spacing: 2px;
+    padding: 7px 0 5px 10px;
+    width:145px;
+}
+
+.siguiente {
+    font-size: 1.2em; 
+    letter-spacing: 2px; 
+    padding-bottom: 20px; 
+    text-align: right;
+    float: right;
+    padding: 7px 10px 5px 0px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    width:145px;
+}
+
+.fechaHoy {
+    float:left;
+    text-align: center;
+    font-size: 2em; 
+    color: #535353;
+    letter-spacing: 3px;
+    width: 330px;
+}
+
+a.navegacion {
+    color: #535353;
+    text-decoration: none;
+}
+
+a.navegacion:hover {
+    color: #FDFDFD;
+}
+
+
+h1.tituloLeccion {
+    color: #535353;
+    letter-spacing: 4px;
+    font-size: 4em;
+    margin: 0 10px 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#versiculo p {
+    margin-bottom: 0px;
+}
+
+.caja {
+    background: #A69F9A;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #FDFDFD;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin: 0 10px;
+}
+
+.caja p {
+    text-align: justify;
+}
+
+.caja a {
+    color: #535353;
+    text-decoration: none;
+}
+
+.caja a:hover {
+    color: #FDFDFD;
+    text-decoration: underline;
+}
+
+.taglib-text {
+    text-decoration: none !important;
+}
+
+.taglib-text:hover {
+    text-decoration: none !important;
+}
+
+a.importante {
+    background: #FDFDFD;
+    padding: 5px 10px;
+    letter-spacing:1px;
+    text-decoration:none;
+    color:#4C4238;
+}
+
+a.importante:hover {
+    color:#4C4238;
+    text-decoration: underline;
+}
+
+.addthis_toolbox {
+    letter-spacing: 0;
 }

@@ -7,6 +7,14 @@
     <packaging>war</packaging>
     <name>Escuela Sabática Theme 2</name>
     <version>1.0-SNAPSHOT</version>
+    <repositories>
+        <repository>
+            <id>JBoss</id>
+            <name>JBoss Repsitory</name>
+            <layout>default</layout>
+            <url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        </repository>
+    </repositories>
     <build>
         <plugins>
             <plugin>
@@ -37,6 +45,20 @@
                     <source>1.6</source>
                     <target>1.6</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.zeroturnaround</groupId>
+                <artifactId>jrebel-maven-plugin</artifactId>
+                <version>1.0.7</version>
+                <executions>
+                    <execution>
+                        <id>generate-rebel-xml</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
@@ -82,7 +104,7 @@
         </dependency>
     </dependencies>
     <properties>
-        <liferay.auto.deploy.dir>/opt/portal/liferay-portal-6.0.5/deploy</liferay.auto.deploy.dir>
+        <liferay.auto.deploy.dir>/opt/portal/liferay-portal-6.0.6/deploy</liferay.auto.deploy.dir>
         <liferay.theme.parent>_styled</liferay.theme.parent>
         <liferay.theme.type>vm</liferay.theme.type>
         <liferay.version>6.0.5</liferay.version>
