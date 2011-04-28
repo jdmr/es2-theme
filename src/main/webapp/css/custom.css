@@ -645,3 +645,20 @@ a.importante:hover {
 .resumenArticulo .liga a:hover {
     text-decoration: underline;
 }
+
+.biblia h2 {
+    color:#4C4238;
+    letter-spacing:1px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.biblia p {
+    letter-spacing:1px;
+    color:#F1EBE6;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 0.8em;
+}
