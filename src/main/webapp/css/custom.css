@@ -494,7 +494,7 @@ body #banner .logo a {
 #versiculo {
     font-size: 2em; 
     letter-spacing: 4px;
-    color:#F1EBE6;
+    color: #FDFDFD;
     text-align: justify;
     padding: 10px;
 }
@@ -548,7 +548,7 @@ h1.tituloLeccion {
     color: #535353;
     letter-spacing: 4px;
     font-size: 4em;
-    margin: 0 10px 10px;
+    margin: 0 10px;
     font-weight: normal;
     text-align: center;
 }
@@ -564,7 +564,7 @@ h1.tituloLeccion {
     color: #F1EBE6;
     font-size: 1.3em;
     letter-spacing: 1px;
-    margin: 0 10px;
+    margin: 10px 10px 0 10px;
 }
 
 .caja p {
