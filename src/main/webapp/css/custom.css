@@ -563,8 +563,18 @@ h1.tituloLeccion {
     padding: 5px 10px;
     color: #F1EBE6;
     font-size: 1.3em;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin: 0px 10px 10px 10px;
+}
+
+.caja2 {
+    background: #A69F9A;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #F1EBE6;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    margin: 0px 10px 10px 0px;
 }
 
 .caja p {
@@ -592,7 +602,7 @@ h1.tituloLeccion {
 a.importante {
     background: #F1EBE6;
     padding: 5px 10px;
-    letter-spacing:1px;
+    letter-spacing:2px;
     text-decoration:none;
     color:#4C4238;
 }
@@ -608,7 +618,7 @@ a.importante:hover {
 
 .resumenArticulo a.titulo {
     color:#4C4238;
-    letter-spacing:1px;
+    letter-spacing:2px;
     margin-bottom: 10px;
     text-decoration: none;
 }
@@ -618,13 +628,22 @@ a.importante:hover {
 }
 
 .resumenArticulo p.titulo {
-    text-align: left;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.resumenArticulo p.autor {
+    text-align: right;
+    color:#EFEFEF;
+    margin-bottom: 0;
+    padding-top: 0;
 }
 
 .resumenArticulo p {
-    letter-spacing:1px;
+    font-size: 1em;
+    letter-spacing:2px;
     color:#F1EBE6;
-    padding-top: 10px;
+    padding-top: 5px;
     text-align: justify;
 }
 
@@ -637,7 +656,7 @@ a.importante:hover {
 .resumenArticulo .liga a {
     background:#F1EBE6;
     padding: 5px 5px;
-    letter-spacing:1px;
+    letter-spacing:2px;
     text-decoration:none;
     color:#4C4238;
 }
@@ -650,7 +669,7 @@ a.importante:hover {
     color:#4C4238;
     letter-spacing:1px;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
     font-size: 1em;
     font-weight: normal;
 }
@@ -659,10 +678,97 @@ a.importante:hover {
     letter-spacing:1px;
     color:#F1EBE6;
     padding-top: 10px;
-    text-align: left;
+    text-align: center;
     font-size: 0.8em;
 }
 
 .mensajesDiscusion {
     font-size: 0.8em;
+}
+
+.articulo a.titulo {
+    color:#4C4238;
+    letter-spacing:3px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.articulo a.titulo:hover {
+    text-decoration: underline;
+}
+
+.articulo p.titulo {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.articulo p.tituloPrincipal {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 5em;
+    color: #4C4238;
+}
+
+.articulo p.autor {
+    text-align: right;
+    padding-top: 0px;
+    padding-right: 10px; 
+    margin-bottom: 5px;
+    color:#EFEFEF;
+    font-size: 1.3em;
+}
+
+.articulo p.autorPrincipal {
+    text-align: right;
+    padding-top: 0px;
+    padding-right: 10px; 
+    margin-bottom: 5px;
+    color:#EFEFEF;
+    font-size: 2em;
+}
+
+.articulo p {
+    letter-spacing:2px;
+    color:#F1EBE6;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.articulo .liga {
+    margin: 10px 0;
+    padding: 0px;
+    text-align: right;
+}
+
+.articulo .liga a {
+    background:#F1EBE6;
+    padding: 5px 5px;
+    letter-spacing:1px;
+    text-decoration:none;
+    color:#4C4238;
+}
+
+.articulo .liga a:hover {
+    text-decoration: underline;
+}
+
+table.articulo {
+    margin: 0 10px 10px 10px;
+}
+
+td.lado {
+    width: 465px;
+}
+
+td.centro {
+    width: 10px;
+}
+
+.articulo .botones {
+    padding: 10px 0;
+}
+
+p.powered-by {
+    padding: 5px 20px;
 }
