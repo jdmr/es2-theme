@@ -16,12 +16,12 @@ body {
 }
 
 a {
-    color: #5B677D;
+    color: #535353;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #06C;
+    color: #F1EBE6;
     text-decoration: none;
 }
 
@@ -771,4 +771,13 @@ td.centro {
 
 p.powered-by {
     padding: 5px 20px;
+}
+
+p.pregunta {
+    color: #696969;
+}
+
+p.reflexion {
+    color: #696969;
+    padding: 0 20px;
 }
