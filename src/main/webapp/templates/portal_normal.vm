@@ -39,10 +39,7 @@
 			</h3>
 		</hgroup>
                 </div>
-                <div style="float:left;width:260px;padding-top:30px;text-align:right;">
-                    <img src="/es-theme/images/lema.png" />
-                </div>
-                <div style="float:right;width:184px;text-align:right;padding: 75px 20px 0 0;">
+                <div style="float:right;width:184px;text-align:right;padding: 65px 15px 0 0;">
                     <!-- AddThis Button BEGIN -->
                     <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
                         <a class="addthis_button_preferred_1"></a>
@@ -58,7 +55,7 @@
                 </div>
 
 		#if(!$is_signed_in)
-			<a href="$sign_in_url" id="sign-in" rel="nofollow" style="right:20px;top:40px;">$sign_in_text</a>
+			<a href="$sign_in_url" id="sign-in" rel="nofollow" style="right:16px;top:40px;">$sign_in_text</a>
 		#end
 
 		#if ($update_available_url)
